@@ -10,4 +10,4 @@ ENV RUBY_MAJOR 2.5 && RUBY_VERSION 2.5.8
 
 WORKDIR /product-register
 COPY Gemfile Gemfile.lock /product-register/
-RUN bundle install
+RUN bundle install && gem update bundler
